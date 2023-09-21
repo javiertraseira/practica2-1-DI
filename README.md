@@ -26,7 +26,7 @@ Mejora el proyecto anterior para que en la clase principal ahora se creen 3 empl
 - A continuación, muestra los empleados ordenados por *salario neto* de menor a mayor.
 
 ## Parte 4
-Haz un debugeo pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase trabajador:
+Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase trabajador:
 - Crea un breakpoint e inicia el debugger.
 - Asegúrate que el debugger entra dentro del método en la llamada al debugger.
 - Una vez dentro de un método usa el botón adecuado para volver a la instrucción que lo llamó.
