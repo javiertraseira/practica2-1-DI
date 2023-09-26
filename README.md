@@ -18,7 +18,7 @@ Además de los métodos *getter/setter* correspondientes, la clase *Asalariado* 
 Una vez creada la clase, crea en la clase principal un método main y asígnale un solo trabajador, guardando sus datos y mostrando la información anterior por pantalla, así como el sueldo bruto y el resultante de aplicar el IRPF del mes.
 
 ## Parte 2
-Sincroniza el contenido de tu proyecto en Netbeans con el de la tarea de Github Classroom. Haz los ajustes necesarios en Netbeans (también puedes utilizar otras herramientas como la línea de comandos de git o github Desktop).
+Sincroniza el contenido de tu proyecto en Netbeans con el de la tarea de Github Classroom. También puedes utilizar otras herramientas como la línea de comandos de git o github Desktop.
 
 ## Parte 3 (opcional)
 Mejora el proyecto anterior para que en la clase principal ahora se creen 3 empleados requiriendo al usuario dicha información por pantalla.
