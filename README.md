@@ -18,7 +18,7 @@ Además de los métodos *getter/setter* correspondientes, la clase *Asalariado* 
 - Un método para calcular la retención al **aplicar el IRPF**. El porcentaje de IRPF se aplicará sobre el sueldo bruto.
 - Un método para calcular el importe del **"sueldo neto"** del mes. Se calcula haciendo *sueldo bruto - retención IRPF*.
 
-Una vez creada la clase Asalariado, crea en una **clase principal** un método *main* y asígnale un solo trabajador, guardando sus datos y mostrando la información anterior por pantalla, así como el sueldo bruto y el resultante de aplicar el IRPF del mes.
+Una vez creada la clase *Asalariado*, en la **clase principal** asignar en el método *main* un solo trabajador, guardando sus datos y mostrando la información anterior por pantalla, así como el sueldo bruto y el resultante de aplicar el IRPF del mes.
 
 ## Parte 2
 Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase trabajador:
