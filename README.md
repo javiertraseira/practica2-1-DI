@@ -1,6 +1,6 @@
 # Práctica 2.1 Introducción a la POO
 
-Crea dentro de la carpeta **SOL** del repositorio local de Github clonado un nuevo proyecto en Apache Netbeans llamado *practica2.1* que tenga las siguientes características:
+Crea dentro de la carpeta **SOL** del repositorio local de Github clonado un nuevo proyecto en Apache Netbeans llamado *practica2-1* que tenga las siguientes características:
 
 ## Parte 1 (versión 1.0)
 Crea una clase llamada *Asalariado* con los siguientes **atributos privados**:
