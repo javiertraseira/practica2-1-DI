@@ -42,14 +42,15 @@ Si has cumplido con todo lo anterior prueba hacer un *merge* con *main* después
 ## Parte 3 
 Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase *trabajador*:
 
-- Crea un **breakpoint** e inicia el debugger.
-- Asegúrate que el debugger entra dentro del método en la llamada al debugger.
+1. Crea un **breakpoint** e inicia el debugger.
+2. Asegúrate que el debugger entra dentro del método en la llamada al debugger.
 - Visualiza el valor de las distintas **variables** en la llamada.
 - Una vez dentro de un método usa el botón adecuado para volver a la instrucción que lo llamó.
-- Haz un análisis de los valores de la llamada a otro método usando el botón apropiado.
+3. Asegúrate de que una de las clases se le ha introducido valores y luego utiliza el debugger para recuperarlos con una clase getNombre();
+4. Haz un análisis de los valores de la llamada a otro método usando el botón apropiado.
 - Prueba a cambiar en tiempo real los valores de una llamada a un método.
-- Crea otro brekpoint más adelante dentro del código y salta directamente a este.
-- Crea un **breakpoint condicional** que solo se active si, por ejemplo, las horas extra son mayores de 5.
+5. Crea otro brekpoint más adelante dentro del código y salta directamente a este.
+6. Crea un **breakpoint condicional** que solo se active si, por ejemplo, las horas extra son mayores de 5.
 
 
 
