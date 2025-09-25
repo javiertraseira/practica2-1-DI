@@ -23,7 +23,7 @@ Además de los métodos *getter/setter* correspondientes, la clase *Asalariado* 
 Una vez creada la clase *Asalariado*, en la **clase principal** asignar en el método *main* un solo trabajador, guardando sus datos y mostrando la información anterior por pantalla, así como el sueldo bruto y el resultante de aplicar el IRPF del mes.
 
 ## Parte 2 
-Antes de empezar esta parte, crea una nueva rama o branch nuevo en GitHub llamada *parte-2*.
+Antes de empezar esta parte, crea una nueva **rama** o **branch** nuevo en GitHub llamada **parte-2**.
 
 Revisa si has seguido las siguientes **buenas prácticas** en el desarrollo anterior y si no es el caso impleméntalas:
 
