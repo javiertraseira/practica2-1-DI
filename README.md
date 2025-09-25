@@ -1,8 +1,10 @@
 # Práctica 2.1 Introducción a la POO
 
+El objetivo de esta práctica es repasar los fundamentos de la Programación Orientada a Objetos (POO) en Java, practicar la creación de ramas en Github y el uso del depurador de Apache Netbeans.
+
 Crea dentro de la carpeta **SOL** del repositorio local de Github clonado un nuevo proyecto en Apache Netbeans llamado *practica2-1* que tenga las siguientes características:
 
-## Parte 1 (versión 1.0)
+## Parte 1  
 Crea una clase llamada *Asalariado* con los siguientes **atributos privados**:
  - DNI
  - Nombre    
@@ -20,18 +22,34 @@ Además de los métodos *getter/setter* correspondientes, la clase *Asalariado* 
 
 Una vez creada la clase *Asalariado*, en la **clase principal** asignar en el método *main* un solo trabajador, guardando sus datos y mostrando la información anterior por pantalla, así como el sueldo bruto y el resultante de aplicar el IRPF del mes.
 
-## Parte 2
-Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase trabajador:
+## Parte 2 
+Antes de empezar esta parte, crea una nueva rama o branch nuevo en GitHub llamada *parte-2*.
+
+Revisa si has seguido las siguientes **buenas prácticas** en el desarrollo anterior y si no es el caso impleméntalas:
+
+- **Constantes**: Define el precio de la hora extra como una constante (static final) para reforzar buenas prácticas.
+- **Sobrecarga** de constructores: Además del constructor con DNI, podrías añadir otro con todos los parámetros para practicar la sobrecarga.
+- *toString()*: Implementar un toString() para mostrar fácilmente la información del trabajador sin tener que concatenar cadenas en main.
+- **Validaciones**: Añadir pequeñas validaciones (ej. sueldo base no negativo, horas extra ≥ 0) para practicar condicionales dentro de setters.
+
+Mejora el código del proyecto anterior para que en la clase principal ahora se creen 3 empleados requiriendo al usuario dicha información por pantalla (opcional):
+
+- Mostrar la información de los empleados recopilada así como su sueldo bruto y sueldo neto.
+- A continuación, muestra los empleados ordenados por *salario neto* de menor a mayor.
+
+Si has cumplido con todo lo anterior prueba hacer un *merge* con *main* después de verificar que todo funcione bien.
+
+## Parte 3 
+Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase *trabajador*:
+
 - Crea un **breakpoint** e inicia el debugger.
 - Asegúrate que el debugger entra dentro del método en la llamada al debugger.
-- Visualiza el valor de las distintas variables en la llamada.
+- Visualiza el valor de las distintas **variables** en la llamada.
 - Una vez dentro de un método usa el botón adecuado para volver a la instrucción que lo llamó.
 - Haz un análisis de los valores de la llamada a otro método usando el botón apropiado.
 - Prueba a cambiar en tiempo real los valores de una llamada a un método.
 - Crea otro brekpoint más adelante dentro del código y salta directamente a este.
+- Crea un **breakpoint condicional** que solo se active si, por ejemplo, las horas extra son mayores de 5.
 
 
-## Parte 3 (opcional)  (versión 1.1)
-Mejora el proyecto anterior para que en la clase principal ahora se creen 3 empleados requiriendo al usuario dicha información por pantalla:
-- Mostrar la información de los empleados recopilada así como su sueldo bruto y sueldo neto.
-- A continuación, muestra los empleados ordenados por *salario neto* de menor a mayor.
+
