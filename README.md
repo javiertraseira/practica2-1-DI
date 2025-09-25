@@ -1,6 +1,6 @@
-# Práctica 2.1 Introducción a la POO
+# Práctica 2.1 Introducción a la POO, ramas y debugger
 
-El objetivo de esta práctica es repasar los fundamentos de la Programación Orientada a Objetos (POO) en Java, practicar la creación de ramas en Github y el uso del depurador de Apache Netbeans.
+El objetivo de esta práctica es repasar los fundamentos de la Programación Orientada a Objetos (POO) en Java, practicar la creación de ramas en Github y el uso del debugger de Apache Netbeans.
 
 Crea dentro de la carpeta **SOL** del repositorio local de Github clonado un nuevo proyecto en Apache Netbeans llamado *practica2-1* que tenga las siguientes características:
 
