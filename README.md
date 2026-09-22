@@ -52,5 +52,20 @@ Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el val
 5. Crea otro brekpoint más adelante dentro del código y salta directamente a este.
 6. Crea un **breakpoint condicional** que solo se active si, por ejemplo, las horas extra son mayores de 5.
 
+## Parte 4
+Vamos a convertir parte de la **documentación** del repositorio en una pequeña página web utilizando **GitHub Pages**.
 
+1. Crea una carpeta docs en el repositorio.
+2. Dentro crea un archivo `index.md`.
+3. Incluye dentro del fichero mínimo:
+- nombre del proyecto;
+- breve descripción;
+- características principales;
+- instrucciones básicas de uso;
+- una imagen;
+- un enlace al repositorio.
+4. Realiza un *commit* con los cambios y súbelos a GitHub.
+5. Desde `Settings → Pages`, configura como origen de publicación la rama *main* y la carpeta */docs*.
+6. Comprueba que la página se publica correctamente.
+7. Añade al `README.md` un enlace denominado Documentación online que apunte a la página publicada.
 
