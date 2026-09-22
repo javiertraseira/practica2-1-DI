@@ -69,3 +69,16 @@ Vamos a convertir parte de la **documentación** del repositorio en una pequeña
 6. Comprueba que la página se publica correctamente.
 7. Añade al `README.md` un enlace denominado Documentación online que apunte a la página publicada.
 
+----
+
+Antes de dar por terminada la práctica comprueba:
+
+- [ ] Los nombres de atributos y métodos son descriptivos.
+- [ ] No existe código duplicado innecesariamente.
+- [ ] Los métodos realizan una tarea concreta.
+- [ ] No existen valores numéricos importantes escritos directamente en varios lugares.
+- [ ] Los atributos tienen la visibilidad adecuada.
+- [ ] El programa controla entradas incorrectas.
+- [ ] El código compila sin errores.
+- [ ] Se han probado varios casos antes de integrar la rama.
+
