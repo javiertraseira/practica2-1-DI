@@ -1,84 +1,162 @@
-# Práctica 2.1 Introducción a la POO, ramas y debugger
+# Práctica 2.1 Repaso de POO, GitHub, debugging y documentación
 
-El objetivo de esta práctica es repasar los fundamentos de la Programación Orientada a Objetos (POO) en Java, practicar la creación de ramas en Github y el uso del debugger de Apache Netbeans.
+El objetivo de esta práctica es repasar conceptos fundamentales de **Programación Orientada a Objetos (POO) en Java**, trabajar con **ramas e Issues en GitHub**, utilizar el **debugger de Apache NetBeans** para localizar errores y documentar un pequeño proyecto.
 
-Crea dentro de la carpeta **SOL** del repositorio local de Github clonado un nuevo proyecto en Apache Netbeans llamado *practica2-1* que tenga las siguientes características:
+Crea dentro de la carpeta **SOL** de tu repositorio local un nuevo proyecto de Apache NetBeans llamado `practica2-1`.
 
-## Parte 1  
-Crea una clase llamada *Asalariado* con los siguientes **atributos privados**:
- - DNI
- - Nombre    
- - Sueldo base
- - Horas extra realizadas 
- - IRPF (%)
+## Parte 1. Modelado con POO
 
-Los objetos *Asalariado* se podrán crear con un constructor por defecto o con un constructor con un solo parámetro correspondiente al DNI.
+Crea una clase llamada `Asalariado` con los siguientes **atributos privados**:
 
-Además de los métodos *getter/setter* correspondientes, la clase *Asalariado* tendrá al menos los siguientes métodos:
-- Un método para calcular el importe correspondiente a las **horas extra** realizadas del mes.
-- Un método para calcular el importe del **"sueldo bruto"** del mes; se calcula haciendo *sueldo base + complemento por horas extras*.
-- Un método para calcular la retención al **aplicar el IRPF**. El porcentaje de IRPF se aplicará sobre el sueldo bruto.
-- Un método para calcular el importe del **"sueldo neto"** del mes. Se calcula haciendo *sueldo bruto - retención IRPF*.
+- DNI
+- Nombre
+- Sueldo base
+- Horas extra realizadas
+- IRPF (%)
 
-Una vez creada la clase *Asalariado*, en la **clase principal** asignar en el método *main* un solo trabajador, guardando sus datos y mostrando la información anterior por pantalla, así como el sueldo bruto y el resultante de aplicar el IRPF del mes.
+Los objetos `Asalariado` se podrán crear mediante:
 
-## Parte 2 
-Antes de empezar esta parte, crea una nueva **rama** o **branch** nuevo en GitHub llamada **parte-2**.
+- un constructor por defecto;
+- un constructor que reciba únicamente el DNI.
 
-Revisa si has seguido las siguientes **buenas prácticas** en el desarrollo anterior y si no es el caso impleméntalas:
+Añade los métodos *getter* y *setter* necesarios.
 
-- **Constantes**: Define el precio de la hora extra como una constante (static final) para reforzar buenas prácticas.
-- **Sobrecarga** de constructores: Además del constructor con DNI, podrías añadir otro con todos los parámetros para practicar la sobrecarga.
-- *toString()*: Implementar un toString() para mostrar fácilmente la información del trabajador sin tener que concatenar cadenas en main.
-- **Validaciones**: Añadir pequeñas validaciones (ej. sueldo base no negativo, horas extra ≥ 0) para practicar condicionales dentro de setters.
+La clase deberá incluir también métodos que permitan:
 
-Mejora el código del proyecto anterior para que en la clase principal ahora se creen 3 empleados requiriendo al usuario dicha información por pantalla:
+- calcular el importe correspondiente a las **horas extra** realizadas;
+- calcular el **sueldo bruto**: sueldo base + importe de horas extra;
+- calcular la **retención de IRPF** aplicada sobre el sueldo bruto;
+- calcular el **sueldo neto**: sueldo bruto - retención de IRPF.
 
-- Mostrar la información de los empleados recopilada así como su sueldo bruto y sueldo neto.
-- A continuación, muestra los empleados ordenados por *salario neto* de menor a mayor.
+Para realizar los cálculos considera inicialmente que cada hora extra tiene un valor de **20 €**.
 
-Si has cumplido con todo lo anterior prueba hacer un *merge* con *main* después de verificar que todo funcione bien.
+En la clase principal:
 
-## Parte 3 
-Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase *Asalariado*:
+1. Crea un trabajador.
+2. Asigna valores a sus atributos.
+3. Muestra por pantalla sus datos, sueldo bruto, retención de IRPF y sueldo neto.
 
-1. Crea un **breakpoint** e inicia el debugger.
-2. Asegúrate que el debugger entra dentro del método en la llamada al debugger.
-- Visualiza el valor de las distintas **variables** en la llamada.
-- Una vez dentro de un método usa el botón adecuado para volver a la instrucción que lo llamó.
-3. Asegúrate de que una de las clases se le ha introducido valores y luego utiliza el debugger para recuperarlos con una clase `getNombre();`
-4. Haz un **análisis de los valores** de la llamada a otro método usando el botón apropiado.
-- Prueba a cambiar en tiempo real los **valores** de una llamada a un método.
-5. Crea otro brekpoint más adelante dentro del código y prueba a **saltar** directamente a este.
-6. Crea un **breakpoint condicional** que solo se active si, por ejemplo, las horas extra son mayores de 5.
+Realiza un **commit** cuando esta primera parte funcione correctamente.
 
-## Parte 4
-Vamos a convertir parte de la **documentación** del repositorio en una pequeña página web utilizando **GitHub Pages**.
+---
 
-1. Crea una carpeta docs en el repositorio.
-2. Dentro crea un archivo `index.md`.
-3. Incluye dentro del fichero mínimo:
+## Parte 2. Mejora del código e Issues
+
+Antes de modificar el programa, crea en GitHub una nueva rama llamada:
+
+`parte-2`
+
+Ahora crea varios **Issues** para registrar las mejoras que vas a realizar. Como mínimo:
+
+- sustituir el precio de la hora extra por una **constante**;
+- añadir un constructor que permita inicializar todos los atributos;
+- implementar `toString()`;
+- validar que el sueldo base y las horas extra no puedan ser negativos;
+- permitir trabajar con varios empleados.
+
+A continuación, modifica el programa para resolverlos.
+
+La aplicación deberá pedir al usuario los datos de **3 empleados** y:
+
+1. mostrar la información de cada empleado;
+2. mostrar su sueldo bruto y sueldo neto;
+3. ordenar los empleados por **sueldo neto de menor a mayor**.
+
+Realiza commits descriptivos durante el desarrollo. Cuando corresponda, puedes relacionarlos con los Issues utilizando, por ejemplo:
+
+`Closes #3`
+
+Cuando todos los cambios estén comprobados, integra la rama `parte-2` en `main`.
+
+---
+
+## Parte 3. Localización de errores con el debugger
+
+Vamos a utilizar el debugger para observar cómo se ejecuta el programa y cómo cambian sus datos.
+
+Realiza las siguientes pruebas:
+
+1. Coloca un **breakpoint** antes de calcular el sueldo de un empleado e inicia el debugger.
+2. Observa los valores de sus atributos.
+3. Utiliza **Step Into** para entrar dentro de uno de los métodos de cálculo.
+4. Utiliza **Step Over** para ejecutar instrucciones sin entrar en otros métodos.
+5. Utiliza **Step Out** para regresar al método que realizó la llamada.
+6. Consulta durante la depuración expresiones como:
+
+```java
+empleado.getNombre()
+empleado.getHorasExtra()
+empleado.getSueldoNeto()
+```
+
+7. Coloca otro breakpoint más adelante y utiliza **Continue** para continuar directamente hasta él.
+8. Crea un **breakpoint condicional** que solo se active cuando las horas extra sean superiores a 5.
+
+### Investiga un error
+
+Modifica temporalmente el cálculo del sueldo neto para introducir este error:
+
+```java
+return calcularSueldoBruto() + calcularRetencionIRPF();
+```
+
+Crea un Issue indicando que:
+
+> El sueldo neto obtenido es superior al sueldo bruto.
+
+Utiliza el debugger para localizar la causa del problema, corrige el código y cierra el Issue correspondiente mediante un commit.
+
+---
+
+## Parte 4. Documentación
+
+Añade documentación básica al proyecto.
+
+### Documentación del código
+
+Utiliza **Javadoc** para documentar:
+
+- la clase `Asalariado`;
+- sus constructores;
+- al menos dos métodos de cálculo.
+
+### Documentación online
+
+Crea una carpeta `docs` en el repositorio y dentro un archivo `index.md`.
+
+Incluye como mínimo:
+
 - nombre del proyecto;
 - breve descripción;
 - características principales;
 - instrucciones básicas de uso;
 - una imagen;
 - un enlace al repositorio.
-4. Realiza un *commit* con los cambios y súbelos a GitHub.
-5. Desde `Settings → Pages`, configura como origen de publicación la rama *main* y la carpeta */docs*.
-6. Comprueba que la página se publica correctamente.
-7. Añade al `README.md` un enlace denominado Documentación online que apunte a la página publicada.
 
-----
+Realiza un commit y sube los cambios a GitHub.
 
-Antes de dar por terminada la práctica comprueba:
+Después configura **GitHub Pages** desde:
 
-- [ ] Los nombres de atributos y métodos son descriptivos.
-- [ ] No existe código duplicado innecesariamente.
-- [ ] Los métodos realizan una tarea concreta.
-- [ ] No existen valores numéricos importantes escritos directamente en varios lugares.
+`Settings → Pages`
+
+Selecciona como origen la rama `main` y la carpeta `/docs`.
+
+Comprueba que la página funciona correctamente y añade al `README.md` un enlace denominado **Documentación online**.
+
+---
+
+## Comprobación final (pre-testing)
+
+Antes de dar por terminada la práctica verifica:
+
+- [ ] El proyecto compila y funciona correctamente.
 - [ ] Los atributos tienen la visibilidad adecuada.
-- [ ] El programa controla entradas incorrectas.
-- [ ] El código compila sin errores.
-- [ ] Se han probado varios casos antes de integrar la rama.
-
+- [ ] Los nombres de atributos y métodos son descriptivos.
+- [ ] Se utilizan constantes cuando corresponde.
+- [ ] Los datos incorrectos son validados.
+- [ ] Se han utilizado Issues para registrar tareas o errores.
+- [ ] Los Issues resueltos están cerrados.
+- [ ] Se han utilizado correctamente breakpoints y las principales herramientas del debugger.
+- [ ] El código contiene documentación Javadoc.
+- [ ] La rama `parte-2` se ha integrado correctamente en `main`.
+- [ ] La documentación de GitHub Pages se publica correctamente.
