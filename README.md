@@ -32,7 +32,7 @@ Revisa si has seguido las siguientes **buenas prácticas** en el desarrollo ante
 - *toString()*: Implementar un toString() para mostrar fácilmente la información del trabajador sin tener que concatenar cadenas en main.
 - **Validaciones**: Añadir pequeñas validaciones (ej. sueldo base no negativo, horas extra ≥ 0) para practicar condicionales dentro de setters.
 
-Mejora el código del proyecto anterior para que en la clase principal ahora se creen 3 empleados requiriendo al usuario dicha información por pantalla (opcional):
+Mejora el código del proyecto anterior para que en la clase principal ahora se creen 3 empleados requiriendo al usuario dicha información por pantalla:
 
 - Mostrar la información de los empleados recopilada así como su sueldo bruto y sueldo neto.
 - A continuación, muestra los empleados ordenados por *salario neto* de menor a mayor.
@@ -40,7 +40,7 @@ Mejora el código del proyecto anterior para que en la clase principal ahora se 
 Si has cumplido con todo lo anterior prueba hacer un *merge* con *main* después de verificar que todo funcione bien.
 
 ## Parte 3 
-Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase *trabajador*:
+Haz un **debugeo** pormenorizado del contenido para ver como va cambiando el valor de los atributos del objeto creado de la clase *Asalariado*:
 
 1. Crea un **breakpoint** e inicia el debugger.
 2. Asegúrate que el debugger entra dentro del método en la llamada al debugger.
