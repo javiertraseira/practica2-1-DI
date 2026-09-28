@@ -64,7 +64,9 @@ La aplicación deberá pedir al usuario los datos de **3 empleados** y:
 
 Realiza commits descriptivos durante el desarrollo. Cuando corresponda, puedes relacionarlos con los Issues utilizando, por ejemplo:
 
-`Closes #3`
+`Comentario Closes #3`
+
+> Ello implica que cerraría el issue número 3.
 
 Cuando todos los cambios estén comprobados, integra la rama `parte-2` en `main`.
 
