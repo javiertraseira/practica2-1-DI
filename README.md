@@ -32,7 +32,7 @@ Para realizar los cálculos considera inicialmente que cada hora extra tiene un 
 
 En la clase principal:
 
-1. Crea un trabajador.
+1. Crea un empleado.
 2. Asigna valores a sus atributos.
 3. Muestra por pantalla sus datos, sueldo bruto, retención de IRPF y sueldo neto.
 
@@ -56,7 +56,7 @@ Ahora crea varios **Issues** para registrar las mejoras que vas a realizar. Como
 
 A continuación, modifica el programa para resolverlos.
 
-La aplicación deberá pedir al usuario los datos de **3 empleados** y:
+La aplicación deberá pedir al usuario los datos de **n empleados** y:
 
 1. mostrar la información de cada empleado;
 2. mostrar su sueldo bruto y sueldo neto;
